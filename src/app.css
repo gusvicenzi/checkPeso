@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: blue;
+}
+
+img {
+  height: 10rem;
+  background-color: red;
+}
+
+.headerOptions {
+}
