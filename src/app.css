@@ -27,6 +27,10 @@ button {
   color: #fff;
 }
 
+.selected {
+  color: #fff;
+}
+
 .container {
   display: flex;
   flex-flow: column;
@@ -55,6 +59,10 @@ header > img {
   display: flex;
 }
 
+.headerOptions > .hidden {
+  display: none;
+}
+
 main {
   display: flex;
   flex-direction: row;
@@ -64,7 +72,7 @@ main {
 .leftSideBar {
   background-color: #06283d;
 
-  width: 20rem;
+  min-width: 20rem;
 }
 
 .leftSideBar > .buttonsContainer {
@@ -79,5 +87,21 @@ main {
   background-color: #dff6ff;
 
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-grow: 1;
+  padding: 5rem;
+}
+
+.central > p {
+  font-size: 2rem;
+  text-align: justify;
+
+  max-width: 50rem;
+}
+
+.central > .homeScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
