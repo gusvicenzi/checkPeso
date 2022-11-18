@@ -24,11 +24,11 @@ button {
 }
 
 .lightText:hover {
-  color: #fff;
+  color: #f7c129;
 }
 
 .selected {
-  color: #fff;
+  color: #f7c129;
 }
 
 .container {
@@ -59,8 +59,20 @@ header > img {
   display: flex;
 }
 
-.headerOptions > .hidden {
+.headerOptions .buttonsContainer:nth-child(2) > label {
+  padding-right: 1rem;
+}
+
+.headerOptions > .hidden,
+.leftSideBar.hidden {
   display: none;
+}
+
+.headerOptions .buttonsContainer:nth-child(2) {
+  padding-left: 2rem;
+}
+.headerOptions .buttonsContainer:nth-child(2) > button > p {
+  font-size: 1.5rem;
 }
 
 main {

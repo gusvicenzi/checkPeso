@@ -1,7 +1,7 @@
 import { createRoot } from 'react-dom/client'
 import './app.css'
 import logo from '/assets/logo.png'
-import { Home, Info, Folder, Refresh, Check } from '@material-ui/icons'
+import { Home, Info, Folder, Refresh, Check, Loop } from '@material-ui/icons'
 import React, { useEffect, useState } from 'react'
 
 const root = createRoot(document.getElementById('root') as HTMLElement)
@@ -53,14 +53,14 @@ function App() {
               <option value="COM4">COM4</option>
             </select>
             <button>
-              <Check style={iconStyle} />
+              <Loop style={iconStyle} />
               <p className='lightText'>Atualizar lista</p>
             </button>
           </div>
         </div>
       </header>
       <main>
-        <div className="leftSideBar">
+        <div className={`leftSideBar ${showHome ? '' : 'hidden'}`}>
           <div className="buttonsContainer">
             <button>
               <Folder style={iconStyle} />
